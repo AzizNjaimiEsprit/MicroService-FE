@@ -12,6 +12,11 @@ import { EvaluationComponent } from './evaluation/evaluation.component';
 import { AddEvalComponent } from './evaluation/components/add-eval/add-eval.component';
 import { EditEvalComponent } from './evaluation/components/edit-eval/edit-eval.component';
 import { ListEvalComponent } from './evaluation/components/list-eval/list-eval.component';
+import { CandidaturesComponent } from './candidatures/candidatures.component';
+import { AddCandidaturesComponent } from './candidatures/add-candidatures/add-candidatures.component';
+import { ListCandidaturesComponent } from './candidatures/list-candidatures/list-candidatures.component';
+import { EditCandidaturesComponent } from './candidatures/edit-candidatures/edit-candidatures.component';
+import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,11 @@ import { ListEvalComponent } from './evaluation/components/list-eval/list-eval.c
     EvaluationComponent,
     AddEvalComponent,
     EditEvalComponent,
-    ListEvalComponent
+    ListEvalComponent,
+    CandidaturesComponent,
+    AddCandidaturesComponent,
+    ListCandidaturesComponent,
+    EditCandidaturesComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +40,12 @@ import { ListEvalComponent } from './evaluation/components/list-eval/list-eval.c
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide : LocationStrategy ,
+      useClass: HashLocationStrategy
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -26,7 +26,7 @@ export class EditEvalComponent implements OnInit {
 
   save() {
     this.evalService.editEval(this.eval).subscribe(res => {
-      window.location.href = '/eval/listEval';
+      window.location.href = '/#/eval/listEval';
     })
   }
 }

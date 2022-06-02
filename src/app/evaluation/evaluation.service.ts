@@ -22,15 +22,15 @@ export class EvaluationService {
   }
 
   editEval(body){
-    return this.http.put(environment.basePath+'/evaluations',body)
+    return this.http.put('/evaluations/'+body.id,body)
   }
 
   getEval(id){
     //return this.http.get<Evaluation>('assets/mock/evaluation_1.json')
-    return this.http.get<Evaluation>(environment.basePath+'/evaluations'+id)
+    return this.http.get<Evaluation>('/evaluations/'+id)
   }
 
   deleteEval(id){
-    return this.http.delete<any>(environment.basePath+'/evaluations'+id)
+    return this.http.delete<any>('/evaluations/'+id)
   }
 }

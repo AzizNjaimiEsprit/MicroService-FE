@@ -22,7 +22,7 @@ export class ListEvalComponent implements OnInit {
   }
 
   edit(id) {
-    window.location.href = '/eval/editEval?id='+id;
+    window.location.href = '/#/eval/editEval?id='+id;
   }
 
   delete(id) {
