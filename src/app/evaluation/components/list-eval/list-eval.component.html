@@ -1,0 +1,20 @@
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">NoteCV</th>
+    <th scope="col">NoteRH</th>
+    <th scope="col">NoteTechnique</th>
+    <th scope="col">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let eval of listEval">
+    <th scope="row">{{ eval.id }}</th>
+    <td>{{ eval.noteCV }}</td>
+    <td>{{ eval.noteRH }}</td>
+    <td>{{ eval.noteTechnique }}</td>
+    <td>{{ eval.description }}</td>
+  </tr>
+  </tbody>
+</table>
