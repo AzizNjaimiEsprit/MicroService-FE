@@ -20,7 +20,7 @@ export class AddEvalComponent implements OnInit {
 
   save(){
     this.evalService.saveEval(this.eval).subscribe(res => {
-      console.log(res)
+      window.location.href = '/eval/listEval';
     })
   }
 

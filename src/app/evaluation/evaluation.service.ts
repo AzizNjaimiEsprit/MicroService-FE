@@ -13,7 +13,9 @@ export class EvaluationService {
   }
 
   getEvaluations(): Observable<any> {
-    return this.http.get<Evaluation>('/evaluations')
+    return this.http.get<Evaluation>('assets/mock/evaluation.json')
+
+    //return this.http.get<Evaluation>('/evaluations')
   }
 
   saveEval(body){
@@ -25,6 +27,11 @@ export class EvaluationService {
   }
 
   getEval(id){
-    return this.http.get<Evaluation>(environment.basePath+'/evaluations'+id)
+    return this.http.get<Evaluation>('assets/mock/evaluation_1.json')
+    // return this.http.get<Evaluation>(environment.basePath+'/evaluations'+id)
+  }
+
+  deleteEval(id){
+    return this.http.delete<any>(environment.basePath+'/evaluations'+id)
   }
 }

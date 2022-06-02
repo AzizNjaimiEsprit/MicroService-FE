@@ -1,4 +1,4 @@
-<div>
+<div class="formContainer pt-5">
   <div class="form-group my-3">
     <label for="exampleInputEmail1">Note CV</label>
     <input type="text" class="form-control" [(ngModel)]="eval.noteCV" id="exampleInputEmail1" placeholder="Note CV">
@@ -18,6 +18,8 @@
     <label for="exampleInputPassword3">Description</label>
     <input type="text" class="form-control" [(ngModel)]="eval.description" id="exampleInputPassword3" placeholder="Description">
   </div>
+  <div class="form-group my-3 buttonContainer">
+    <button type="submit" (click)="save()" class="btn btn-primary px-4">Submit</button>
+  </div>
 
-  <button type="submit" (click)="save()" class="btn btn-primary">Submit</button>
 </div>
