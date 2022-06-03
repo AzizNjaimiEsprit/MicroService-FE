@@ -1,3 +1,6 @@
+import { ListCandidaturesComponent } from './candidatures/list-candidatures/list-candidatures.component';
+import { EditCandidaturesComponent } from './candidatures/edit-candidatures/edit-candidatures.component';
+import { AddCandidaturesComponent } from './candidatures/add-candidatures/add-candidatures.component';
 import { ListOfferComponent } from './offer/components/list-offer/list-offer.component';
 import { EditOfferComponent } from './offer/components/edit-offer/edit-offer.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,6 +22,7 @@ import { AddOfferComponent } from './offer/components/add-offer/add-offer.compon
 import { AddEmpComponent } from './employee/components/add-emp/add-emp.component';
 import { EditEmpComponent } from './employee/components/edit-emp/edit-emp.component';
 import { ListEmpComponent } from './employee/components/list-emp/list-emp.component';
+import { CandidaturesComponent } from './candidatures/candidatures.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { ListEmpComponent } from './employee/components/list-emp/list-emp.compon
     ListOfferComponent,
     AddEmpComponent,
     EditEmpComponent,
-    ListEmpComponent
+    ListEmpComponent,
+    CandidaturesComponent,
+    AddCandidaturesComponent,
+    EditCandidaturesComponent,
+    ListCandidaturesComponent
   ],
   imports: [
     BrowserModule,
