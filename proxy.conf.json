@@ -10,5 +10,11 @@
     "secure": false,
     "logLevel": "debug",
     "changeOrigin": true
+  },
+    "/employee": {
+    "target": "http://localhost:8054/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
   }
 }

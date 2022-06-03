@@ -17,6 +17,10 @@ import { AddCandidaturesComponent } from './candidatures/add-candidatures/add-ca
 import { ListCandidaturesComponent } from './candidatures/list-candidatures/list-candidatures.component';
 import { EditCandidaturesComponent } from './candidatures/edit-candidatures/edit-candidatures.component';
 import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
+import { EmployeeComponent } from './employee/employee.component';
+import { AddEmpComponent } from './employee/components/add-emp/add-emp.component';
+import { EditEmpComponent } from './employee/components/edit-emp/edit-emp.component';
+import { ListEmpComponent } from './employee/components/list-emp/list-emp.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
     CandidaturesComponent,
     AddCandidaturesComponent,
     ListCandidaturesComponent,
-    EditCandidaturesComponent
+    EditCandidaturesComponent,
+	  EmployeeComponent,
+    AddEmpComponent,
+    EditEmpComponent,
+    ListEmpComponent
   ],
   imports: [
     BrowserModule,
