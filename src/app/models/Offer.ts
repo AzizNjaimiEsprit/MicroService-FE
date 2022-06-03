@@ -1,8 +1,8 @@
 export class Offers {
     id? : string
-    intituleOffre? : string
+    intitule_offre? : string
     requirements? : string
     Description? : string
-    experience? : string
+    experience? : number
     salaire? : string
   }

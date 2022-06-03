@@ -15,10 +15,10 @@
       <tbody>
       <tr *ngFor="let offer of listOffer">
         <th scope="row">{{ offer.id }}</th>
-        <td>{{ offer.intituleOffer }}</td>
-        <td>{{ offer.requirements }}</td>
-        <td>{{ offer.description }}</td>
-        <td>{{ offer.experience }}</td>
+        <td>{{ offer.intitule_offre }}</td>
+        <td>{{ offer.requirements}}</td>
+        <td>{{ offer.Description}}</td>
+        <td>{{ offer.experience}}</td>
         <td>{{ offer.salaire }}</td>
         <td class="d-flex">
           <button type="button" (click)="edit(offer.id)" class="btn btn-secondary mx-3">Edit</button>

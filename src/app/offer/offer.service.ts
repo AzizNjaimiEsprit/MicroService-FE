@@ -11,22 +11,22 @@ export class OfferService {
   constructor(private http: HttpClient) {
   }
   getOffers(): Observable<any> {
-    return this.http.get<Offers>('/offers/getAllOffres')
+    return this.http.get<Offers>('/offres')
   }
 
   saveOffer(body){
-    return this.http.post('/offers/createOffre',body)
+    return this.http.post('/offres',body)
   }
 
   editOffer(body){
-    return this.http.put('/offers/updateOffre/'+body.id,body)
+    return this.http.put('/offres'+body.id,body)
   }
 
   getOffer(id){
-    return this.http.get<Offers>('/offers/'+id)
+    return this.http.get<Offers>('/offres'+id)
   }
 
   deleteOffer(id){
-    return this.http.delete<any>('/offers/deleteOffre/'+id)
+    return this.http.delete<any>('/offres'+id)
   }
 }
