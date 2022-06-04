@@ -12,6 +12,8 @@ import { EmployeeComponent } from './employee/employee.component';
 import { AddEmpComponent } from './employee/components/add-emp/add-emp.component';
 import { EditEmpComponent } from './employee/components/edit-emp/edit-emp.component';
 import { ListEmpComponent } from './employee/components/list-emp/list-emp.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 const routes: Routes = [
@@ -25,6 +27,8 @@ const routes: Routes = [
   {path: 'emp/addEmp',component: AddEmpComponent},
   {path: 'emp/editEmp',component: EditEmpComponent},
   {path: 'emp/listEmp',component: ListEmpComponent},
+  {path: 'login',component: LoginComponent},
+  {path: 'register',component: RegisterComponent}
 ];
 
 @NgModule({
